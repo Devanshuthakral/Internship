@@ -1,0 +1,69 @@
+in css most preferable is 1.inline
+2.external
+3.internal
+if we will say in external and internal 2nd one is prefered(which one is more close to body or tag or jo sabse niche hoga uski preference yaad rahe)
+
+BOX MODEL   
+1.dimension(hiegt,width)
+2.border
+3.padding
+4.margin
+
+CSS 3 UNITS
+pixel-kisi bhi screen ho utna hi rahega(fix unit)
+%-work according to the size of screen(relative to parent)
+vw,vh-view port(saara cover krta hai)(relative to view port)
+
+short hand property
+agr rectangle hai to px main value
+square to % main
+
+padding se sirf height bad jaati hai upar neeche se
+andar ki space ke liye padding bahar ke liye margin
+
+
+display
+inline element(pe dimension apply nahi hoti) ko block bnata hai and vice versa
+
+position
+1.relative
+2.absolute(m imp.)
+3.fixed
+4.sticky
+
+SELECTORS
+1. decendent selector-relative ke andr jitne marji div ho ye usko select krta hai(any div inside relative container)
+2. child selector-#relative-container >div{
+}
+(only that will be selected which is the child of the parent(relative-container))
+3. div:nth-of-type(2)-pure html main jo 2nd wala hoga use target krega or 2nd div in html
+4. div:nth-of-type()-2nd wale child ko target krega
+
+agr kisi element ko right krna hai to vo left se move hoga and vice versa
+top or bottom main top ko preference milti hai
+left or right main left ko milti hai(these are only for position)
+but baaki saaro(padding,margin,dimension) main usme last wale ko milti hai preference 
+
+absolute-isme overlapping type hoti hai(the element moves with respect to its recent parent ehich have a position else body)
+
+
+fixed-used in navbar (elements is fixed on screen,elemnet move with respect to body(view port))
+
+sticky
+IT IS A combination of absolute and fixed positions
+drawback:-
+jiske upar sticky lagai na vo pehle walo ko chupa deta hai
+
+FLEX
+it is a container property not applied on elements(handles display of childs)
+justify content-ye main access main items ko align kr deta hai(align childs with respect to main access)
+
+
+handles extra space around the main axis
+space-between-its arrange all the space between the child(no space on edges)
+space-around-its spread all the space equally around the child(beech main jyada space but edges main kam)
+space-evenly-its spread all the space evenly across main axis(beech main or edges main exactly same space)
+
+gap means child ke beech ka minimum gap
+flex overflow ko bhi rokta hai apne child ko shrink krke
+flex-wrap-this is for ki jab hume chahiye ki ek ke upar ek na aaye or shift the child in next row if it is at a shrink point

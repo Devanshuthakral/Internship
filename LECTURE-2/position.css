@@ -1,0 +1,32 @@
+#fixed-container{
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+    position: relative;
+}
+
+#fixed-container > div{
+    border: 2px solid red;
+    height: 100px;
+    width:100px;
+    display: inline-block;
+}
+
+#fixed-container > div:nth-child(2){
+    position: fixed;
+    background-color: lightblue;
+    top:20px;
+    right: 0px;
+
+
+}
+
+#sticky-container{
+    border: solid 6px blue;
+}
+
+#sticky-container > p:nth-child(2){
+    background-color: lightcoral;
+    position: sticky;
+    top: 10px;
+}

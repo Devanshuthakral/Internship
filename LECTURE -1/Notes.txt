@@ -1,0 +1,72 @@
+web dev
+its a source
+HTML-hypertext(links-to connect different logics) markup language
+folder in which filea r there are parent or current folder  
+to exit from current folder->sytax is->../
+without controls video will not run
+loop atribute-restart the video like autoplay kind
+auto-to play the video automatically
+
+iframe-web page pe frame bna dega
+
+block elements->covers full width
+inline elements->jitna likja hai utna hi cover not extra
+disadvantage->dont apply dimension property
+inline-block elements->act as inline and also apply dimensions
+
+table
+thead->headings  (tag->th->to create a single heading)
+tbody->main content (tag->td->table data)(tr->row)
+tfoot->information
+most imp:-
+ROWSPAN
+colspan
+
+FORM
+in label for is input ko active kr deta hai
+name->name is a field where the data is saved
+required->agr submit kiya and details are not filled then it will show please fill the form
+action->it is for giving the location->location where to submit the form (kaha form ko exactly place deni hai)
+
+FOR FORM we never use get method
+we use post method it is a secure way to save the data(url main data nahi aata)
+forms 
+method->GET->insecure,data is visible in url(query parameters)
+POST->secure method to submit form->data is available in FormData
+pattern->like adding special key and all (Used in Javascript)
+
+HTML Semantics
+for a webpage
+1.header->navbar(list,logo)
+2.body->content
+categorisation(in html category mean section)->section tag|
+                                                           -> landing page->features->reviewa
+div tag->to divide category in sub category
+
+3.footer->information(links,@)
+
+SEO-Search Engine Optimisation->website ko rank krane ke liye
+rules:-
+meta tag->information about web page
+h1->1 time in a single page
+h2->3 to 4 time in a single page
+h3 to h6->no limit
+
+
+CSS
+property:Value;
+property:value;
+font weight->thickness
+anchor tag main bydefault hi underline ki property hoti hai
+
+3types
+1.inline-style atribute
+2.internal-header m style tag
+3.external-another file(.css)
+
+selectors-tag main style krne ke liye
+1.tag/elements
+2.id selector->unique kisi ek ko hi de skte hai
+3.class selector
+4.universal selector
+ctrl+alt+down

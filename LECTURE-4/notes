@@ -1,0 +1,57 @@
+TAILWIND
+isme direct value dete hai
+text colour-from 50 to 100,200,300.....900,950(except white and black)
+
+TAILWIND main h1 jo hai vo p tag main convert ho jaata hai
+sm,md,lg,2xl.....9xl
+thickness -> font-thin,base,semibold,bold,medium,black
+in leading property ideal value is 6
+
+custom value:-
+normal css ko TAILWIND main krna
+
+border radius:-
+rounde-sm,md,xl,lg,2xl...4xl,full
+
+padding for specific direction:-
+pt-10-padding top
+p-4(all direction)
+pl,ps(padding start)-left
+pr,pe(padding end)-right
+pb-bottom
+py-top and bottom
+px-left and right
+
+margin
+mx-auto se beech main aa jaega ye tab chalta hai jab fixed cheeze hoti hai
+my-auto-nahi chalta
+
+capitalize -TAILWIND main na har ek letter ka first word capital kr dega
+
+overflow:-it is like overflow of the letters
+overflow jo hai na auto wala hidden ke sath work nahi hota
+specific direction ka overflow control krna-overflow-x-scroll
+
+custom values:-
+text-[30px]
+dimension property
+total width of screen can be divided into parts-2,3,4,5,6,9,11,12
+w-1/2(half-50%)
+w-1/3(33.3%)
+..........w-1/12(8.3%)
+w-full(100%)
+w-screen(100vw),w-[70vw]
+
+bg-[url("location of image")]
+bg-[linear-gradient(deg,#fff,
+3kjwfb22,#223ac8,...)]
+
+justify-content:center->justify-center
+justify-content:space-between->justify-between,evenly,around
+wrap-agr elements shrink hote hai like wrap hone lagte hai to unko next line main shift kr deta hai
+
+MEDIA QUERY
+(phone)sm:,(small tablets)md:,(tablets)lg:,.....,(laptops and pc's)4xl-these are screen sizes
+sm:text-red-500->text will be red for small and more than the small sizes
+md:text-red-500->this means medium or usse badi walo ke liye ye colour hoga
+text-green-400->har screen ke liye applicable hai

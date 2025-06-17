@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Nav</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <nav class="bg-black flex justify-between items-center p-5 fixed top-0 w-full shadow-lg z-50">
+    <!-- Menu toggle checkbox -->
+    <input type="checkbox" class="peer hidden" id="menu-toggle">
+
+    <!-- Logo -->
+    <img src="" alt="logo" class="w-12 h-12">
+
+    <!-- Hamburger icon inside label -->
+    <label for="menu-toggle" class="w-10 h-10 sm:hidden cursor-pointer">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffd6d6">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+          fill="#ebe6e6" />
+      </svg>
+    </label>
+
+    <!-- Menu links -->
+    <div class="hidden peer-checked:flex gap-5 flex-col sm:flex sm:flex-row">
+      <a class="text-white" href="#">Item1</a>
+      <a class="text-white" href="#">Item2</a>
+      <a class="text-white" href="#">Item3</a>
+      <a class="text-white" href="#">Item4</a>
+      <a class="text-white" href="#">Item5</a>
+    </div>
+  </nav>
+</body>
+</html>

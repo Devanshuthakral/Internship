@@ -1,0 +1,49 @@
+git(local->changes not) & github(cloud)
+1. why->
+
+2.types of version control->each commit is a version
+u->untracks changes
+git init-git initialize
+some stages
+1. staging area->rechecking ke liye(its a waiting lobby,so that we can recheck code.)
+command->git add .
+. ->means all files
+2. git commit -> kya kaam kiya hai(it creates a version of code you want to save and save the code to local repository with a name)
+
+wim editor
+1. press i to write
+2. then type whatever u want
+3. press "esc" to exit writing (then escape(:wq))
+4. type ":wq" to save commit
+then enter
+it will create local version
+
+3. git-log -> shows all your (commits/versions).
+
+4. git checkout id 
+    git checkout main -> to go to the latest version 
+
+linkedlist 
+head - > checkout krne se git ckeckout krne se voh pehle wale commit pr chla jata h jo hmne upload kra tha bychnace jse tumne usme changes kre h toh tumhe git chevkout main krna pdega jbhi sareee changess aayege 
+
+
+branches-> so that more than 2 people can work on same project 
+
+
+branch bnane ke lie command hoti h git branch -M ab uska namm for ex git branch Dev 
+
+to change branch name- git branch -M fir branch ka name for ex git branche
+
+
+to switch branch-> git checkout branch name/ git switch branch name
+
+to check in which branch you are-> git branch
+
+to create branch and switch to this branch -> git checkout -b branch name 
+devanshu
+
+
+git remote add origin link paste jo github pe repo bnaogee usse ayega 
+
+git push origin branch name jisme push krna h code 
+sss

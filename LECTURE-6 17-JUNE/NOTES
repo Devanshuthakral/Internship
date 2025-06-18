@@ -1,0 +1,27 @@
+toggle-agr already present hoga to show krga nahi to nahi krega
+Java Script
+only coding language in MERN
+node js is environment jisme java script run karwaenge
+javascript->1. its a weekly type language
+            2. no need to compile before running(no need to define data type)
+                code compiles line by line(this behaviour is known as syncronous behaviour-ek line run hoge result aaega tab hi next line pe jaega)
+            
+            compiler of js->v8 engine->browser main milta hai
+
+            data type->
+            1. number(int,float)
+            2. string
+            3. boolean(false values->0,null,undefined,false)
+            4. null
+            5. undefined
+
+            how to define variables->var,let,const
+
+REPL->Read Evaluate Print Loop
+
+      initialise            declare         reinitialise          redeclare       assign     reassign 
+      let a=10;             let a;                                                 b=5;      b=20;
+
+var     true                true                true                 true            true        true
+let     true                true                false                               
+const

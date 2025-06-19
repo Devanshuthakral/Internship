@@ -26,4 +26,7 @@ yha pr isko value milegi a=2,b=3,=c=4,d=undefined
 res=2+3+4+undefined = nan(not a number)
 ab jo upr wala cep tha code execution phase ab yei niche walee stake pe jayega or jo upr wala stake tha voh pop/delete hojega
 
-ab niche wale stake ke cep mei resp=nan aagya uske baad jb hmne res = fun5(2,3,4,5) kra toh resp mei SAFLA0AF A
+ab niche wale stake ke cep mei resp=nan aagya uske baad jb hmne res = fun5(2,3,4,5) kra toh resp mei 
+
+Higher order function
+when we pass a function as a arguements()

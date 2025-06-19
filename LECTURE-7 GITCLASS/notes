@@ -47,6 +47,8 @@ git remote add origin link paste jo github pe repo bnaogee usse ayega
 
 git push origin branch name jisme push krna h code 
 
-git pull = git pull se hmm apni jo branch h devanshu wali usme lecture 7 saved h abb mujhe usko agr main mei lana h toh mei git pull devanshu yei kruga |
+git pull = git pull se hmm apni jo branch h devanshu wali usme lecture 7 saved h abb mujhe usko agr main mei lana h toh mei git pull devanshu yei kruga | git pull sb branch ko same krdega ek sth leke chlega
+
+git merge = same to the git pull in this time we can use this method in the git bash
 
 git 

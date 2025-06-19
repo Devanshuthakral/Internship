@@ -1,0 +1,29 @@
+function can return anything
+
+MAP 
+a=Dead temporal zone 
+fun5 = (a,b,b){ // yei yha se ht ke niche chla jayega 
+    return a+b+c
+}
+res = undefined
+
+fun5 = (a,b,c,d){
+    return a+b+c+d
+}
+
+ab yei memory allocation phase se hmm cep(code execution phase mei jayega)
+yha pr 
+a ko value milegi 
+a=10
+uske bbad response res print hoga 
+than hmm ek or stake  bnayega map or cep ki 
+toh 
+
+fir whi kaam
+map mei a,b,c,d ko undefined value milegi 
+ab yei cep mei jayega 
+yha pr isko value milegi a=2,b=3,=c=4,d=undefined
+res=2+3+4+undefined = nan(not a number)
+ab jo upr wala cep tha code execution phase ab yei niche walee stake pe jayega or jo upr wala stake tha voh pop/delete hojega
+
+ab niche wale stake ke cep mei resp=nan aagya uske baad jb hmne res = fun5(2,3,4,5) kra toh resp mei SAFLA0AF A

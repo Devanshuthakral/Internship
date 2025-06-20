@@ -1,4 +1,16 @@
-spread operator -
+spread operator:-
+to copy another object ,array,values to new object,array.
 
-to copy another object/array
-values to new objects/arr
+reduce:-
+array pr ek arithematic operation perform krna
+
+accumulator:-
+for loop chalane main sum ko store krta hai
+
+asynchronous js
+1. dont wait for result of upper line of code(first line run hui waise hi second bhi ho jaegi)
+methods and functions
+1.setTimeout
+2.setInterval
+3.promises
+4.asyn functions

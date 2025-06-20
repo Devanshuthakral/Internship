@@ -135,3 +135,58 @@ console.log(sqArr);
 
 let cubeArr = ArrConverter(arr,cube);
 console.log(cubeArr);
+
+
+function cb(x){
+    console.log("callback function",x);
+    return function(y){
+        console.log("inner funcion",y);
+        return x+ y ;
+
+    };
+}
+function higher(callback){
+    console.log("higher order function");
+    let innerfunc = callback(5);
+    console.log("this is below call");
+    return innerfunc(10);
+}
+console.log(higher(cb)); //sbse pehle higher function
+
+function cb(x){
+    console.log("callback function",x);
+    if(x>10){
+        return "Greater than 10";
+    }else{
+        return "less than or equal to 10";
+    }
+}
+function higher(callback,value){
+    console.log("higher order function");
+    let ans=callback(value);
+    console.log("this is below call");
+    return ans;
+}
+console.log(higher(cb,12));
+console.log(higher(cb,8));
+
+
+function cb(){
+    console.log("callback function");
+    return function(){
+        console.log("inner function 1");
+        return function(){
+            console.log("inner function 2");
+            return "final return";
+        };
+    };
+}
+function higher(callback){
+    console.log("higher order function");
+    let innerFunc1=callback();
+    console.log("this is below call 1");
+    let innerFunc2=innerFunc1();
+    console.log("this is below call 2");
+    return innerFunc2();
+}
+console.log(higher(cb));

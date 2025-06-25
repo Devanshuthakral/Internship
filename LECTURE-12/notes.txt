@@ -1,0 +1,52 @@
+middleware - runs for every/specif request that comes to backend
+ 1.generic - yei hr ek req pe chlege ya hrr ek req jati h 
+ app.use(()=>{}) 
+
+
+2. path specific - isme only specific req jati h 
+app.use("/user",()=>{})
+1. /user
+2. /user/contact
+ /user-details/data/user(this middleware will not run) 
+
+ 
+app.get("/user",(req,res)=>{
+    // res.send("vanshika pagal");
+   res.json({name:"devanshu"})
+    res.json({name:"devanshu"}) //this will create error as we are sending two response for 1 req.
+})
+
+
+app.get("/user",(req,res)=>{
+    // res.send("vanshika pagal");
+   return res.json({name:"devanshu"}) //yha hmne ek function jse bna diya islie iske niche wala run nhi hoga
+    res.json({name:"devanshu"}) //this will not work as function returned 
+})
+
+
+
+req objects keys->
+1.body-> formData,json data,(secure data - not available on url)
+2. Query - > e.g localhost:4000/?name=devanshu&email=devanshuthakral09@gmail.com
+ query = {                       // this is the unsecure way 
+    name:"devanshu",
+    email:"devanshuthakral09@gmail.com"
+}
+
+
+req.query ={
+    name:"devanshu",
+    email:"devanshuthakral09@gmail.com"
+}
+
+4. params - > e.g ->localhost:4000/user/1213/3039
+
+          app.get("/user/:id/:rollno")
+
+          req.params = {
+            id:"1213"
+            rollno: "3039"
+          }
+
+
+5. headers-> contains tokens and (for authorization).secure          

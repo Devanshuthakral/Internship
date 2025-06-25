@@ -1,14 +1,37 @@
-DOM -> Document object Model
-full html file ko object mei change krdeta h 
-
+DOM->Document Object Model
+full html file ko Object main change kr deta hai
 Selectors->
-1. getElementbytagname - returns list of elements
-2. getElementbyClass - returns list of elements
-3. getElementByid - return Single Element
-4. querySelector("")- Tagname ,.classname,#IdName - returns Single Element
-5. querySelector("")- Tagname ,.classname,#IdName - returns list of elements 
+1. getElementsByTagName
+2. getElementsByClass
+3. getElementsById->return single getElementsByClass
+4. querySelector("Tag name,classname or id anything")->return single element
+5. querySelectorAll("Tag name,classname or id anything")->return list of elements
+
+Getters->                                              Setters
+1. innerText,innerHTML,textContent                     1.innerText="some other value"
+2. .id,.className,getAttribute()                       2.setAttribute("attribute","new value")->change value of any attribute
+
+PUSH element IN html
+1. .append(add,push text && element too)
+2. .appendChild(push element only)
+
+eventListeners
+events->any action perform by a user on a web page.
+e.g.,"click","mousehover","submit","scroll","keypress" etc.....
+Listeners->which listens to an event continuously and performs a function when event triggers.
 
 
-Getters                                                                   Setters
-1. innerText , innerHTML,textcontent                                      innertext="some other value"
-2. .id  , .class
+const h1=document.querySelector("h1");
+h1.addEventListener("click",(e)=>{
+                             |_>event reference->stores details related to event like event origin element event position etc
+    h1.classList.toggle("background");
+})
+
+e.target->return the element inside h1 at which the event trigger
+
+event bubbling->the event will propogate from child to parent if both have same eventj
+h1->click will trigger only h1 event
+span->click will trigger span & h1 event
+
+JSON-JAVA SCRIPT OBJECT NOTATTION
+JSON.stringify->ek pure object ko string main badal deta hai

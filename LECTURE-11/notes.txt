@@ -1,0 +1,33 @@
+Node JS
+runtime environment for JS(javascript ko run krne ke liye)
+
+Express->it is a framework build over node JS
+its work is->server creation(we use this because it gifts easy syntax(easy to use))
+
+nodes modules->jo packages install krte hai na vo yaha pe store ho jaate hai 
+
+
+npm init -y->create node environment
+npm i package name->e.g.npm i express(creates servor)
+node index.js->runs server
+nodeman index.js->restart server evrytime when file changes.
+npx nodemon.\index.js->for latest version we use it(another nodeman command)
+
+
+
+const express=require("express");
+
+app.get("/",(req,res)=>{
+    
+})
+            
+            |>1.req type(get,post,put,patch,delete),2.path("/post","/","/contacts","/all-users")
+        API REQUEST
+FRONTEND ------------> BACKEND---------------> DATABASE
+         <------------       <----------------
+          response
+          ek api ka ek hi resoponse hota hai
+performs operation with data and then send to frontend
+
+
+

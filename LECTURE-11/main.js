@@ -18,7 +18,7 @@ console.log("storage - ",localStorage.getItem("obj"));
 let storedObj=JSON.parse(localStorage.getItem("obj"));
 console.log(storedObj);
 
-const getQR=async(url)=>{
-    let res=await axios.get(https://api.api-ninjas.com/v1/qrcode?format=png&data=https://api-ninjas.com
-)
-}
+// const getQR=async(url)=>{
+//     let res=await axios.get(https://api.api-ninjas.com/v1/qrcode?format=png&data=https://api-ninjas.com
+// )
+// }

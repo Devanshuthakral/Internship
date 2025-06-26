@@ -1,4 +1,4 @@
-middleware - runs for every/specif request that comes to backend
+middleware - runs for every/specific request that comes to backend
  1.generic - yei hr ek req pe chlege ya hrr ek req jati h 
  app.use(()=>{}) 
 

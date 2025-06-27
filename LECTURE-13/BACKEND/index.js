@@ -1,60 +1,77 @@
-const express = require('express');
-const path = require('path');
-const app = express();
-const PORT = 4444;
-const { v4: uuidv4 } = require('uuid');
-app.use(express.json()); // axios sends the json data
-app.use(express.urlencoded({ extended: true })); // post request by default 
-app.use(express.static(path.join(__dirname, 'public'))); // public folder ko bhejega
+const express=require('express');
+const {v4:uuidv4}=require ('uuid')
+const path =require('path');
+const app=express()
+const PORT=4000
 
-let Todos = [
-//  {
-      // ID=""
-//     // task:"something";
-//     // completd:false
-//  }
-];
+app.use(express.static(path.join(__dirname,'public')))
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 
+let TODOS=[
+    // {task:"this is task 1",
+    //     completed:false
+    // }
+]
 
 app.post("/add-todo",(req,res)=>{
-    const task = req.body.task;
-    Todos.push({task:task,completd:false,id:uuidv4()});
-    res.status(201).json({Todos});
+    console.log(req.body)
+    const task=req.body.task
+    TODOS.push({task:task,completed:false,id:uuidv4()})
+    res.status(201).json({TODOS})
 })
 
-app.delete("/todo/:id",(req,res)=>{
+app.delete("/todo/:id", (req,res)=>{
     const id = req.params.id;
-    Todos = Todos.filter((todo)=>{
+    console.log(id)
+    TODOS = TODOS.filter((todo)=>{
         return todo.id != id;
     })
-    res.status(200).json({Todos});
+    res.status(200).json({TODOS})
 })
 
-app.put("/todo/:id",(req,res)=>{
+app.put("/todo/:id", (req, res)=>{
     const id = req.params.id;
-    Todos = Todos.map((todo)=>{
-        if(todo.id==id){
-        return {
-            ...todo,
-            completed:!(todo.completed)
-        }
+    TODOS = TODOS.map((todo)=>{
+        if(todo.id == id){
+            return {
+                ...todo,
+                completed:!(todo.completed)
+            }
         }
         return todo;
     })
-    res.status(200).json({Todos});
+    res.status(200).json({TODOS})
 })
 
 app.delete("/clear-complete",(req,res)=>{
-    Todos=Todos.filter((todo)=>{
+    TODOS = TODOS.filter((todo)=>{
         return todo.completed==false;
     })
-    res.status(200).json({Todos});
+    res.status(200).json({TODOS});
+})
+
+app.get("/todo/filter", (req,res)=>{
+    const filter = req.query.filter;
+    if(filter == "active"){
+        const filteredTodos = TODOS.filter((todo)=>{
+            return todo.completed == false
+        })
+        return res.status(200).json({TODOS:filteredTodos})
+    }
+    if(filter == "completed"){
+        const filteredTodos = TODOS.filter((todo)=>{
+            return todo.completed == true
+        })
+        return res.status(200).json({TODOS:filteredTodos})
+    }
+    res.status(200).json({TODOS})
 })
 
 app.get("/all-todos",(req,res)=>{
-    res.status(200).json({Todos})
+    res.status(200).json({TODOS})
 })
 
-app.listen(PORT, () => {
-    console.log(`http://localhost:${PORT}`);
-});
+app.listen(PORT,()=>{
+    console.log(`server is running on http://localhost:${PORT}`)
+})

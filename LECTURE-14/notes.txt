@@ -1,0 +1,19 @@
+storage 
+1. SQL = STRUCTURE FORMAT 
+NO EXTRA FIELD CAN BE ADDED
+
+2.NOSql
+-no structure FORMAT
+-can add new Fields
+
+mongoose - provides structure to mongoDB
+- provides queries to create,read,update and delete data
+    
+
+        CRUD Operations 
+
+
+
+
+
+ schema(collection)   = in this we create a blueprint , that how a document will look like in a collection
